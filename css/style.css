@@ -135,10 +135,14 @@ footer{
 /* Slide */
 .container-fluid{
 	padding: 0;
+	
+}
+.container{
+	margin-top: 10px;
 }
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
-	height: 60vh;
+	height: 70vh;
   }
 
 #mainSlider .carousel-caption {
@@ -164,7 +168,7 @@ footer{
   width: 200px;
   height: 60px;
   position: relative;
-  top: -25px;
+  top: -20px;
 
   padding: 10px 20px;
   border-radius: 30px;

@@ -17,29 +17,7 @@ header {
 	margin: 0 auto;
 }
 
-nav {
-	position: absolute;
-	top: 60px;
-	right: 80px;
-}
 
-
-nav li{
-	display: inline;
-	margin: 0 0 0 15px;
-}
-
-nav a{
-	text-transform: uppercase;
-	color: #f0eeee;
-	font-weight: bold;
-	font-size: 20px;
-	text-decoration: none;
-}
-nav a:hover{
-	background-color: #B4A3CF;
-	border-radius: 5px;
-}
 
 
 
@@ -185,6 +163,9 @@ footer{
   text-transform: uppercase;
   width: 200px;
   height: 60px;
+  position: relative;
+  top: -25px;
+
   padding: 10px 20px;
   border-radius: 30px;
   border: 3px solid transparent;

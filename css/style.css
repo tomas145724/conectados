@@ -3,18 +3,57 @@
 	padding: 0;
 }
 
+/* Gerais*/
+body{
+	font-family: 'Roboto', sans-serif;
+}
 
+.row{
+	margin: 0;
+}
 
-header {
-	background: #674B66;
-	padding: 20px 0;
-	height: 100px;
+.container{
+	padding: 70px 0;
+}
+
+p, li{
+	color: #444;
+	font-size: 14px;
 }
 
 
-.divheader {
-	width: 1000px;
-	margin: 0 auto;
+
+
+/* BARRA DE NAVEGAÇÃO*/
+header, .navbar{
+	background-color: #674B66;
+
+}
+
+#nav-container{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#logo{
+	width: 75px;
+}
+
+.navbar-brand{
+	padding: 0;
+	color: #FFF;
+}
+
+.navbar-brand:hover{
+	color: #FFF;
+}
+
+#navbar-links a{
+	color: #FFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav.link{
+	padding: 1rem .8rem;
 }
 
 

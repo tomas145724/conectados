@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conectados | Home </title>
+
+<link rel="stylesheet" href="css/reset.css">
+<!--  FONTS  -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<!---->
+
+<!--Bibliotecas css-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+	<div class="container-fluid" id="navcadastro">
+		<nav class="navbar navbar-expand-lg navbar-light ">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Conectados</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="cadastro.html">Cadastro</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Fale Conosco</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Login</a>
+						</li>
+					</ul>
+					
+				</div>
+				<form class="d-flex" id="pesquisar">
+					<input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</div>
+	<main>
+		<div class="container-fluid" id="cadastro">
+			<div class="container">
+				<form class="needs-validation" novalidate>
+					<div class="form-row">
+					  <div class="col-md-3 mb-3">
+						<label for="validationTooltip01">Nome</label>
+						<input type="text" class="form-control" id="validationTooltip01" placeholder="Nome"  required>
+						<div class="valid-tooltip">
+						  Tudo certo!
+						</div>
+					  </div>
+					  <div class="col-md-3 mb-3">
+						<label for="validationTooltip02">Sobrenome</label>
+						<input type="text" class="form-control" id="validationTooltip02" placeholder="Sobrenome"  required>
+						<div class="valid-tooltip">
+						  Tudo certo!
+						</div>
+					  </div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-3 mb-3">
+							<label for="validationTooltipUsername">Usuário</label>
+							<div class="input-group">
+							  <div class="input-group-prepend">
+								  <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+							   </div>
+								<input type="text" class="form-control" id="validationTooltipUsername" placeholder="Usuário" aria-describedby="validationTooltipUsernamePrepend" required>
+								<div class="invalid-tooltip">
+								  Por favor, escolha um usuário válido e único.
+							   </div>
+						  </div>
+						</div>
+						
+					</div>
+					<div class="form-row">
+						<div class="col-md-3 mb-3">
+							<label for="validationTooltipUsername">Re</label>
+							<div class="input-group">
+							  <div class="input-group-prepend">
+								  <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+							   </div>
+								<input type="text" class="form-control" id="validationTooltipUsername" placeholder="Re" aria-describedby="validationTooltipUsernamePrepend" required>
+								<div class="invalid-tooltip">
+								  Por favor, escolha um usuário válido e único.
+							   </div>
+						  </div>
+						</div>
+						
+					</div>
+					<div class="form-row">
+						<div class="col-md-3 mb-3">
+							<label for="validationTooltip04">Email</label>
+							<input type="text" class="form-control" id="validationTooltip04" placeholder="seu@gmail.com" required>
+							<div class="invalid-tooltip">
+							  Por favor, informe um estado válido.
+							</div>
+						  </div>
+
+					</div>
+					
+					<div class="form-row">
+						<div class="col-md-3 mb-3">
+							<label for="validationTooltip05">CEP</label>
+							<input type="text" class="form-control" id="validationTooltip05" placeholder="CEP" required>
+							<div class="invalid-tooltip">
+							  Por favor, informe um CEP válido.
+							</div>
+						  </div>
+					  <div class="col-md-3 mb-3 disable">
+						<label for="validationTooltip03">Cidade</label>
+						<input type="text" class="form-control" id="validationTooltip03" placeholder="Cidade" required>
+						<div class="invalid-tooltip">
+						  Por favor, informe uma cidade válida.
+						</div>
+					  </div>
+					  <div class="col-md-3 mb-3">
+						<label for="validationTooltip04">Estado</label>
+						<input type="text" class="form-control" id="validationTooltip04" placeholder="Estado" required>
+						<div class="invalid-tooltip">
+						  Por favor, informe um estado válido.
+						</div>
+					  </div>
+					  
+					  
+					</div>
+
+					<div class="custom-file" id="foto-perfil">
+						<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+						<label class="custom-file-label" for="validatedCustomFile">Escolher arquivo...</label>
+						<div class="invalid-feedback">Exemplo de feedback inválido para input file</div>
+					</div>
+					
+				  </form>
+				  
+				  <button class="btn btn-primary" type="submit">Enviar</button>
+
+			</div>
+		</div>
+
+	</main>
+
+
+
+
+
+
+	<script src="js/jquery.js"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+	<script src="js/progressbar.min.js"></script>
+	<script src="js/script.js"></script>
+
+
+<footer>
+	<img id="logoBranco" src="img/logo.png" alt="logo">
+	<p class="copyright">&copy; Copyright Liq Corp S.A</p>
+
+
+</footer>
+
+</body>
+
+
+</html>

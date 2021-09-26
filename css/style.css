@@ -100,13 +100,15 @@
 
 
 
-
+#logoBranco{
+	width: 80px;
+}
 
 
 footer{
 	text-align: center;
 	padding: 30px 0;
-	background: #1F0148;
+	background: #444;
 }
 .copyright{
 	color: #FFFFFF;
@@ -188,4 +190,24 @@ footer{
 	font-size: 36px;
 	font-weight: bold;
 	
+}
+
+
+/* cadastro*/
+.navbar{
+	background: #444;
+}
+#navcadastro{
+	padding: 0;
+}
+#cadastro{
+	margin: 100px 0 200px 0;
+}
+
+#foto-perfil{
+	width: 250px;
+}
+
+.btn-cadastro{
+	margin-top: 10px;
 }

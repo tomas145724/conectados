@@ -201,7 +201,9 @@ footer{
 	padding: 0;
 }
 #cadastro{
-	margin: 100px 0 200px 0;
+	
+
+	
 }
 
 #foto-perfil{
@@ -211,3 +213,12 @@ footer{
 .btn-cadastro{
 	margin-top: 10px;
 }
+
+#titulo-cadastro{
+	font-size: 64px;
+	text-align: center;
+	font-family: poppins;
+	margin: 10px 0 50px;
+	
+}
+

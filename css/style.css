@@ -193,32 +193,35 @@ footer{
 }
 
 
-/* cadastro*/
-.navbar{
-	background: #444;
-}
-#navcadastro{
-	padding: 0;
-}
-#cadastro{
-	
+/* PORTIFOLIO*/
 
-	
+.project-box{
+	margin-bottom: 30px;
 }
 
-#foto-perfil{
-	width: 250px;
-}
-
-.btn-cadastro{
-	margin-top: 10px;
-}
-
-#titulo-cadastro{
-	font-size: 64px;
+#filter-btn-box{
+	margin-bottom: 50px;
 	text-align: center;
-	font-family: poppins;
-	margin: 10px 0 50px;
-	
+}
+
+#portfolio-area .filter-btn{
+	color:#444;
+	border: 1px solid #444;
+	border-radius: 20PX;
+	background-color: transparent;
+	text-transform: none;
+	margin: 0 15px;
+	min-width: 100px;
+	width: auto;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+}
+
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover{
+	color: #fff;
+	background-color: #65DAF9;
+	border-color: #65DAF9;
+	transition-duration: 1s;
 }
 

@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  
     let containerA = document.getElementById("circleA");
     let circleA = new ProgressBar.Circle(containerA,{
         color: '#64DAF9',

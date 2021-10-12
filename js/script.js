@@ -130,3 +130,18 @@ function eachBoxes(type, boxes) {
     }
   }
 
+  let btnEye = document.querySelector('.fa-eye')
+
+  btnEye.addEventListener('click', ()=>{
+    let inputSenha = document.querySelector('#senhaCadastro')
+    let verSenha = document.querySelector('#verSenha')
+    if(inputSenha.getAttribute('type') == 'password' & verSenha.getAttribute('class') == 'fas fa-eye'){
+      inputSenha.setAttribute('type', 'text')
+      verSenha.setAttribute('class', 'fas fa-eye-slash')
+    }else{
+      inputSenha.setAttribute('type', 'password')
+      verSenha.setAttribute('class', 'fas fa-eye')
+    }
+
+  })
+

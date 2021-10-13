@@ -216,54 +216,56 @@
 							</button>
 						</div>
 						<div class="modal-body" id="formCadastros">
-							<form>
+							<form action="">
 								<div class="form-group">
-									<label for="validationTooltip01">Nome</label>
-									<input type="text" class="form-control" id="validationTooltip01" placeholder="Nome"  required>
-									<div class="valid-tooltip">Tudo certo!</div>
-								</div>
-								<div class="form-group">
-									<label for="validationTooltip04">RE</label>
-									<input type="number" class="form-control" id="validationTooltip04" placeholder="123456" required>
-									<div class="invalid-tooltip">Por favor, informe um RE válido.</div>
-								</div>
-								<div class="form-group">
-									<label for="validationTooltipUsername">Nome Usuário</label>
 									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-										</div>
-										<input type="text" class="form-control" id="validationTooltipUsername" placeholder="Usuário" aria-describedby="validationTooltipUsernamePrepend" required>
-										<div class="invalid-tooltip">Por favor, escolha um usuário válido e único.</div>
+										<input type="number" class="form-control" id="cadastro-re"  required>
+										<label for="cadastro-re">RE</label>
 									</div>
-								</div>
-								<div class="form-group">
-									<label for="senhaCadastro">Senha</label>
-									<input type="password" class="form-control" id="senhaCadastro" placeholder="Senha">
-									<i class="fas fa-eye" id="verSenha"></i>
+									<div class="input-group">
+										<input type="text" class="form-control" id="cadastro-usuario" required>
+										<label for="validationTooltipUsername">Nome Usuário</label>
+									</div>
+
+
+									<div class="input-group">
+										<input type="text" data-mask="(00) 00000-0000" class="form-control" id="cadastro-telefone"  name="cadastro-telefone" required>
+										<label for="cadastro-telefone">Telefone</label>
+										<div class="custom-control custom-checkbox" id="check-whats">
+											<input type="checkbox" class="custom-control-input" id="cadastro-wpp" name="cadastro-wpp">
+											<label class="custom-control-label label-whats" for="cadastro-wpp">WhatsApp </label>
+										</div>
+										
+									</div>
+									<div class="input-group">
+										<input type="email" class="form-control" id="cadastro-email"  name="cadastro-email" required>
+										<label for="cadastro-emal">Email</label>
+									</div>
+									<div class="input-group">
+										<input type="password" class="form-control" id="cadastro-senha" required>
+										<label for="cadastro-senha">Senha</label>
+										<div class="custom-control">
+											<i class="fas fa-eye" id="verSenha"></i>
+
+										</div>
+										
+									</div>
+									<div class="input-group">
+										<input type="password" class="form-control" id="confirma-senha" required>
+										<label for="validationTooltipUsername">Confirme a senha</label>
+									</div>
 									
 								</div>
-								<div class="form-group">
-									<label for="cadastro-telefone">Telefone</label>
-									<input type="text" data-mask="(00) 00000-0000" class="form-control" id="cadastro-telefone" placeholder="(81) 99999-8598" name="cadastro-telefone" required>
-									<div class="invalid-tooltip">Por favor, informe um estado válido.</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="cadastro-wpp" name="cadastro-wpp">
-										<label class="custom-control-label label-whats" for="cadastro-wpp">WhatsApp </label>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="cadastro-emal">Email</label>
-									<input type="email" class="form-control" id="cadastro-email" placeholder="seu@email.com" name="cadastro-email" required>
-									<div class="invalid-tooltip">Por favor, informe um estado válido.</div>
+
+								
+								<div class="modal-footer" id="botaoCadastros">
+						
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+									<button type="submit" class="btn btn-primary">Cadastrar</button>
 								</div>
 							</form>
 						</div>
-						<div class="modal-footer" id="botaoCadastros">
 						
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-							<button type="button" class="btn btn-primary">Enviar</button>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -280,26 +282,28 @@
 						<div class="modal-body">
 							<form>
 								<div class="form-group">
-									<label for="validationTooltipUsername">Nome Usuário</label>
+									
 									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-										</div>
-										<input type="text" class="form-control" id="validationTooltipUsername" placeholder="Usuário" aria-describedby="validationTooltipUsernamePrepend" required>
-										<div class="invalid-tooltip">Por favor, escolha um usuário válido e único.</div>
+					
+										<input type="text" class="form-control" id="login-usuario" required>
+										<label for="login-usuario">Nome Usuário</label>
+									</div>
+
+									<div class="input-group">
+										<input type="password" class="form-control" id="login-senha"  required>
+										<label for="login-senha">Senha</label>
+
 									</div>
 								</div>
-								<div class="form-group">
-									<label for="exampleInputPassword1">Senha</label>
-									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+									<button type="submit" class="btn btn-primary">Logar</button>
 								</div>
 		
 							</form>
 						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-							<button type="button" class="btn btn-primary">Logar</button>
-						</div>
+						
 					</div>
 				</div>
 			</div>

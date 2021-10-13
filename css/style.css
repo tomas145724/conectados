@@ -311,12 +311,51 @@
 
 }
 
+/* MODAL*/
+
 #verSenha{
 	position: absolute;
-	top: 318px;
-	right: 30px;
+	top: 10px;
+	right: 0px;
 	cursor: pointer;
 	color: #272262;
 }
+#check-whats{
+	
+	top: 35px;
+
+}
+
+form{
+	margin-top: 25px;
+
+}
+
+.modal-header h5{
+	font-size: 25px;
+	text-align: center;
+}
+div.input-group{
+	margin-bottom: 35px;
+	position: relative;
+}
+
+input ~ label{
+	position: absolute;
+	top: 8px;
+	left: 5px;
+	color: black;
+	transition: .4s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+	
+	transform: translateY(-35px);
+	font-size: 15px;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	
+} 
 
 

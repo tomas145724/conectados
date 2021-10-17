@@ -189,7 +189,7 @@ function eachBoxes(type, boxes) {
   
     $(document).scroll(debounce(function(){
       animeScroll();
-    }, 500));
+    }, 200));
   })();
 
 

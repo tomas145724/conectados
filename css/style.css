@@ -372,7 +372,7 @@ input:valid ~ label{
 .anima {
 	opacity: 0;
 	transform: translate3d(-100px,0,0);
-	transition: .5s;
+	transition: .3s;
 }
 
 .anime-area {

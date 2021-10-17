@@ -40,6 +40,16 @@
 	margin-top: 15px;
 }
 
+#slider-main {
+	top: -80px;
+}
+.navbar{
+    z-index: 999;
+    background: none;
+    border: 0;
+    border-radius: 0;
+}
+
 .navbar-nav a{
 	font-family: poppins;
 	font-size: 18px;
@@ -359,3 +369,13 @@ input:valid ~ label{
 } 
 
 
+.anima {
+	opacity: 0;
+	transform: translate3d(-100px,0,0);
+	transition: .5s;
+}
+
+.anime-area {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}

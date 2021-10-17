@@ -22,7 +22,8 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+	<nav class="navbar navbar-expand-lg navbar-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">Conectados</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +49,9 @@
 	
 		</div>
 	</nav>
-	<div id="slider-main" class="carousel slide" data-ride="carousel">
+
+	
+	<div id="slider-main" class="my-carousel carousel slide " data-ride="carousel">
 
 		<ol class="carousel-indicators">
 			<li data-target="#slider-main" data-slide-to="0" class="active"></li>
@@ -60,7 +63,7 @@
 			<div class="carousel-item active">
 				<img src="img/slide1.png" class="d-block w-100" alt="primeiro slider">
 				<div class="carousel-caption  d-md-block">
-					<h5 class="animated bounceInRight" style="animation-delay: 1s;">Empreendedor</h5>
+					<h5 class="animated bounceInRight" style="animation-delay: 1s;">PodCast</h5>
 					<p class="animated bounceInLeft text-slider" style="animation-delay: 2s;"> Você vende algo para conseguir uma renda extra, fala com a gente, que divulgamos seu trabalho gratuitamente.</p>
 					<a href="#" class="animated zoomIn btn-mais" style="animation-delay: 3s;">Mais informações</a>
 				</div>
@@ -83,11 +86,11 @@
 			</div>
 		</div>
 
-		<a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button">
+		<a class="carousel-control-prev" data-slide="prev" href="#slider-main" role="button">
 			<span aria-hidden="true" class="carousel-control-prev-icon"></span> 
 			<span class="sr-only">Previous</span>
 		</a> 
-		<a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button">
+		<a class="carousel-control-next" data-slide="next" href="#slider-main" role="button">
 			<span aria-hidden="true" class="carousel-control-next-icon"></span> 
 			<span class="sr-only">Next</span>
 		</a>
@@ -95,47 +98,49 @@
 	</div>
 
 
-
-
 	<main id="main-info">
 		<div class="container-fluid">
 			
 			
-
-			<div id="about-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3 class="main-title">Nossos Serviços</h3>
+			<div class="card" id="about-area">
+				<div class="card-body" >
+					<div  class="container">
+						<div class="row">
+							<div class="col-12">
+								<h3 class="main-title">Nossos Serviços</h3>
+							</div>
+							<div class="col-md-4 service-box">
+								<h4><i class="fa fa-spa"></i> MindFulness</h4>
+								<p>Pare e relaxe um pouco.</p>
+							</div>
+							<div class="col-md-4 service-box">
+								<h4><i class="fas fa-gamepad"></i> GameFica</h4>
+								<p>Aqui você vai ter acesso a seu resultado e suas insignias.</p>
+							</div>
+							<div class="col-md-4 service-box">
+								<h4><i class="fas fa-tv"></i> TalkShow</h4>
+								<p>Se liga nas novidas, é melhor do que o Cardinot</p>
+							</div>
+							<div class="col-md-4 service-box">
+								<h4><i class="fas fa-music"></i> Musica</h4>
+								<p>As musicas mais tocadas do momento você consegue ouvir gratuitamente aqui.</p>
+							</div>
+							<div class="col-md-4 service-box">
+								<h4><i class="fas fa-microphone-alt"></i> PodCast</h4>
+								<p>Fique ligado nos eventos, palestras que estão rolando.</p>
+							</div>
+							<div class="col-md-4 service-box">
+								<h4><i class="fas fa-award"></i> Qualidade</h4>
+								<p>Aqui deixaremos você atualizados de procedimentos de quailidade para melhorar seu atendimento.</p>
+							</div>
+				
 						</div>
-						<div class="col-md-4 service-box">
-							<h4><i class="fa fa-spa"></i> MindFulness</h4>
-							<p>Pare e relaxe um pouco.</p>
-						</div>
-						<div class="col-md-4 service-box">
-							<h4><i class="fas fa-gamepad"></i> GameFica</h4>
-							<p>Aqui você vai ter acesso a seu resultado e suas insignias.</p>
-						</div>
-						<div class="col-md-4 service-box">
-							<h4><i class="fas fa-tv"></i> TalkShow</h4>
-							<p>Se liga nas novidas, é melhor do que o Cardinot</p>
-						</div>
-						<div class="col-md-4 service-box">
-							<h4><i class="fas fa-music"></i> Musica</h4>
-							<p>As musicas mais tocadas do momento você consegue ouvir gratuitamente aqui.</p>
-						</div>
-						<div class="col-md-4 service-box">
-							<h4><i class="fas fa-microphone-alt"></i> PodCast</h4>
-							<p>Fique ligado nos eventos, palestras que estão rolando.</p>
-						</div>
-						<div class="col-md-4 service-box">
-							<h4><i class="fas fa-award"></i> Qualidade</h4>
-							<p>Aqui deixaremos você atualizados de procedimentos de quailidade para melhorar seu atendimento.</p>
-						</div>
-			
 					</div>
 				</div>
-			</div>
+			  </div>
+
+
+			
 
 
 
@@ -173,38 +178,37 @@
 				</div>
 			</div>
 
-
-
-
-
-
 			<div id="team-area">
 				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12">
-							<h3 class="main-title">Nosso Time</h3>
-						</div>
-						<div class="col">
-							<div class="card align-items-center">
-								<img src="img/tom.jpg" class="card-img-top">
+					<div class="card mb-4" style="max-width: 540px;">
+						<div class="row row-cols-1 row-cols-md-4 g-4">
+							<div class="col-md-6">
+								<img src="img/tom.jpg" class="img-fluid" />
+						  	</div>
+						  	<div class="col-md-6">
 								<div class="card-body">
-									<h5 class="card-title">Thomaz LIma</h5>
-									<p class="card-text">Estudante de Analise e Desenvolimento de Sistemas</p>
+							 		<h5 class="card-title">Card title</h5>
+							 		<p class="card-text">TESTAMDP I, DPOS </p>
+							  		<p class="card-text">
+										<small class="text-muted">Last updated 3 mins ago</small>
+							  		</p>
 								</div>
-							</div>
+						  </div>	
 						</div>
-						<div class="col">
-							<div class="card align-items-center"">
-								<img src="img/vini.jpeg" class="card-img-top">
-								<div class="card-body">
-									<h5 class="card-title">Vinicius Andrade</h5>
-									<p class="card-text">Estudante de Analise e Desenvolimento de Sistemas</p>
-								</div>
-							</div>
-						</div>
+						
 					</div>
-				</div>
+				</div>	
 			</div>
+
+
+			
+
+
+
+			
+
+			
+		
 
 			<div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-labelledby="cadastroModalLabel" aria-hidden="true">
 				<div class="modal-dialog" role="document">
@@ -280,7 +284,7 @@
 							</button>
 						</div>
 						<div class="modal-body">
-							<form>
+							<form action="">
 								<div class="form-group">
 									
 									<div class="input-group">
@@ -318,25 +322,27 @@
 							</button>
 						</div>
 						<div class="modal-body">
-							<form>
+							<form action="">
 								<div class="form-group">
 									<label for="recipient-email" class="col-form-label">E-mail:</label>
-									<input type="email" class="form-control" id="recipient-email" name="email">
+									<input type="email" class="form-control" id="recipient-email" name="email" required>
 								</div>
 								<div class="form-group">
 									<label for="recipient-re" class="col-form-label">Re:</label>
-									<input type="number" class="form-control" id="recipient-re">
+									<input type="number" class="form-control" id="recipient-re" required>
 								</div>
 								<div class="form-group">
 									<label for="message-text" class="col-form-label">Mensagem:</label>
-									<textarea class="form-control" id="message-text"></textarea>
+									<textarea class="form-control" id="message-text" required></textarea>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+									<button type="submit" class="btn btn-primary">Enviar</button>
 								</div>
 							</form>
+							
 						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-							<button type="button" class="btn btn-primary">Enviar</button>
-						</div>
+					
 					</div>
 				</div>
 			</div>

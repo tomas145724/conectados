@@ -40,6 +40,8 @@
 	margin-top: 15px;
 }
 
+
+
 .navbar-nav a{
 	font-family: poppins;
 	font-size: 18px;
@@ -105,10 +107,7 @@
 
 /* QUEM SOMOS*/
 
-#about-area{
-	background-color: #fff;
 
-}
 
 .main-title{
 	color: #444;
@@ -357,5 +356,4 @@ input:valid ~ label{
 	font-weight: bold;
 	
 } 
-
 

@@ -130,6 +130,8 @@ function eachBoxes(type, boxes) {
     }
   }
 
+
+  /*ver senha*/
   let btnEye = document.querySelector('.fa-eye')
 
   btnEye.addEventListener('click', ()=>{
@@ -147,4 +149,6 @@ function eachBoxes(type, boxes) {
     }
 
   })
+
+
 

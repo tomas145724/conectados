@@ -41,7 +41,7 @@
   }
 
   /**
-   * Navbar links active state on scroll
+   * ATIVA O NAVBAR AO R PARA A SECTION DE CADA UM
    */
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
@@ -93,7 +93,7 @@
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
+  let backtotop = select('.volta-pro-topo')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {

@@ -1,9 +1,7 @@
-/**
-* Template Name: Gp - v4.6.0
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
+
+/* ESTUDAR SOBRE */
+
 (function() {
   "use strict";
 
@@ -40,42 +38,10 @@
     el.addEventListener('scroll', listener)
   }
 
-  /**
-   * ATIVA O NAVBAR AO R PARA A SECTION DE CADA UM
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
+
 
   /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
-
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
-
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
+   * Deixa o head com o fundo preto ao fazer ao descer a pagina
    */
   let selectHeader = select('#header')
   if (selectHeader) {
@@ -91,7 +57,7 @@
   }
 
   /**
-   * Back to top button
+   * Botão apra voltar para o topo
    */
   let backtotop = select('.volta-pro-topo')
   if (backtotop) {
@@ -154,15 +120,7 @@
     }
   });
 
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
+
 
   /**
    * Clients Slider
@@ -201,28 +159,28 @@
   });
 
   /**
-   * Porfolio isotope and filter
+   * Filtro e isotopo das publicações
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+    let publicacoesContainer = select('.publicacoes-container');
+    if (publicacoesContainer) {
+      let publicacoesIsotope = new Isotope(publicacoesContainer, {
+        itemSelector: '.publicacoes-item'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let publicacoesFilters = select('#publicacoes-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#publicacoes-flters li', function(e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        publicacoesFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        portfolioIsotope.arrange({
+        publicacoesIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        publicacoesIsotope.on('arrangeComplete', function() {
           AOS.refresh()
         });
       }, true);
@@ -231,16 +189,16 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * inicializa publicacoes lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+  const publicacoesLightbox = GLightbox({
+    selector: '.publicacoes-lightbox'
   });
 
   /**
-   * Portfolio details slider
+   * slide dos detalhes das publicações
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.publicacoes-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {

@@ -1,3 +1,9 @@
+# Projeto conectados
+
+<p>Projeto criado a partir de um case que fiz para um processo seletivo </p>
+<p>Obs. passei no processo seletivo :D </p>
+
+
 # JavaScript "use strict"
 O "use strict" diretiva era nova na versão 5 do ECMAScript.
   Não é uma declaração, mas uma expressão literal, ignorada por versões anteriores do JavaScript.

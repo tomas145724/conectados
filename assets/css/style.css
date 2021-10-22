@@ -471,13 +471,13 @@ body {
   .publicacoes .publicacoes-item {
 	margin-bottom: 30px;
   }
-  .publicacoes #publicacoes-flters {
+  .publicacoes #publicacoes-filters {
 	padding: 0;
 	margin: 0 auto 20px auto;
 	list-style: none;
 	text-align: center;
   }
-  .publicacoes #publicacoes-flters li {
+  .publicacoes #publicacoes-filters li {
 	cursor: pointer;
 	display: inline-block;
 	padding: 8px 15px 10px 15px;
@@ -490,11 +490,11 @@ body {
 	transition: all 0.3s ease-in-out;
 	border-radius: 3px;
   }
-  .publicacoes #publicacoes-flters li:hover, .publicacoes #publicacoes-flters li.filter-active {
+  .publicacoes #publicacoes-filters li:hover, .publicacoes #publicacoes-filters li.filter-active {
 	color: #403103;
 	background: #F2A679;
   }
-  .publicacoes #publicacoes-flters li:last-child {
+  .publicacoes #publicacoes-filters li:last-child {
 	margin-right: 0;
   }
   .publicacoes .publicacoes-wrap {

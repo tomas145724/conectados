@@ -1,12 +1,12 @@
 
 
-/* ESTUDAR SOBRE */
 
 (function() {
+  
   "use strict";
 
   /**
-   * Easy selector helper function
+   * Uma maneira mais fácil de obter elementos no DOM com vanilla JS
    */
   const select = (el, all = false) => {
     el = el.trim()
@@ -18,7 +18,7 @@
   }
 
   /**
-   * Easy event listener function
+   * função de listar eventos
    */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
@@ -32,7 +32,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * carrega os elementos da pagina, faz o scroll as animações
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -73,7 +73,7 @@
   }
 
   /**
-   * Mobile nav toggle
+   * no mobile deixa aparece o botão de menu no navbar
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
@@ -82,7 +82,7 @@
   })
 
   /**
-   * Mobile nav dropdowns activate
+   * no mobile ajusta os bot
    */
   on('click', '.navbar .dropdown > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
@@ -110,7 +110,9 @@
   }, true)
 
   /**
-   * Scroll with ofset on page load with hash links in the url
+   * 
+  Role com ofset no carregamento da página com links hash no url
+  Uma string, representando a parte âncora do URL, incluindo o sinal de hash (#)
    */
   window.addEventListener('load', () => {
     if (window.location.hash) {
@@ -122,44 +124,9 @@
 
 
 
+ 
   /**
-   * Clients Slider
-   */
-  new Swiper('.clients-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
-      }
-    }
-  });
-
-  /**
-   * Filtro e isotopo das publicações
+   * Filtro e animação isotope das publicações
    */
   window.addEventListener('load', () => {
     let publicacoesContainer = select('.publicacoes-container');
@@ -168,9 +135,9 @@
         itemSelector: '.publicacoes-item'
       });
 
-      let publicacoesFilters = select('#publicacoes-flters li', true);
+      let publicacoesFilters = select('#publicacoes-filters li', true);
 
-      on('click', '#publicacoes-flters li', function(e) {
+      on('click', '#publicacoes-filters li', function(e) {
         e.preventDefault();
         publicacoesFilters.forEach(function(el) {
           el.classList.remove('filter-active');
@@ -213,7 +180,7 @@
   });
 
   /**
-   * Testimonials slider
+   * controle de deslisar por toque
    */
   new Swiper('.testimonials-slider', {
     speed: 600,
@@ -231,7 +198,7 @@
   });
 
   /**
-   * Animation on scroll
+   * executa a animação da pagina quando carrega
    */
   window.addEventListener('load', () => {
     AOS.init({
